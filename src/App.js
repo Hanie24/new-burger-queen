@@ -1,22 +1,29 @@
 import React, { Component } from 'react';
+import ReactDOM from "react-dom";
 import logo from './logo.svg';
 import './App.css';
-import './data.js';
+import data from './data.js';
+import Nav from'./Nav.js';
+import Footer from './Footer.js';
+import Menu from './Menu.js';
 
-class App extends Component {
-  render() {
+class App extends React.Component{
+  constructor(){
+    super();
+   
+  }
+    
+  render(){
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <Nav/>
+        <Menu/>
+        <Footer/>
       </div>
-    );
+    )
   }
 }
 
-export default App;
+export default App
+
+ReactDOM.render(<App />, document.getElementById("root"));
