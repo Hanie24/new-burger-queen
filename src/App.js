@@ -17,7 +17,7 @@ class App extends React.Component{
     return (
       <div>
         <Nav/>
-        <Menu/>
+        <coruselMap/>
         <Footer/>
       </div>
     )

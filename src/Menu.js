@@ -1,16 +1,11 @@
 import React from "react";
 
-
-
 class Menu extends React.Component{
     constructor(){
       super();
-     
     }
     
-   
    render(){
-    
     return ( 
         <div class="card" style={{width: '18rem'}}>
             <img class="card-img-top" src="./public/images/lugos.jpg" alt="Desayunos"/>
